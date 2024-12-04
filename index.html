@@ -11,10 +11,21 @@
     <link rel="stylesheet" href="style.css" />
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+        background: linear-gradient(
+          to right,
+          rgba(104, 94, 94, 0.445),
+          rgb(67, 67, 126)
+        ); /* Gradient from light to dark */
+        color: rgb(19, 9, 9); /* Dark text for better contrast */
+      }
+    </style>
 </head>
 
 <body>
     <!-- Navbar -->
+    <section id="home" class="py-5">
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark p-3 fixed-top shadow-lg">
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
@@ -67,8 +78,9 @@
             </div>
         </div>
     </nav>
-
+</section>
     <!-- Background Section -->
+    <section id="project" class="py-5">
     <div class="custom-background"></div>
 
     <div class="home" id="home">
@@ -76,5 +88,23 @@
             <h1 class="display-4">Welcome to Adrian's Website</h1>
         </div>
     </div>
+    
+</style>
+</head>
+<body>
+<div class="container">
+    <h1 class="text-center my-4">E-commerce Dashboard</h1>
+    <div class="row" id="product-container"></div>
+</div>
+
+      
+  </section>
+      <!-- Bootstrap JS and dependencies -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+      <!-- Include the app.js file -->
+      <script src="project.js"></script>
 </body>
 </html>
