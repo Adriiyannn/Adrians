@@ -11,100 +11,174 @@
     <link rel="stylesheet" href="style.css" />
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
     <style>
         body {
-        background: linear-gradient(
-          to right,
-          rgba(104, 94, 94, 0.445),
-          rgb(67, 67, 126)
-        ); /* Gradient from light to dark */
-        color: rgb(19, 9, 9); /* Dark text for better contrast */
-      }
+            background: linear-gradient(
+                to right,
+                rgba(104, 94, 94, 0.445),
+                rgb(67, 67, 126)
+            ); /* Gradient from light to dark */
+            color: rgb(19, 9, 9); /* Dark text for better contrast */
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
     </style>
 </head>
 
 <body>
     <!-- Navbar -->
     <section id="home" class="py-5">
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark p-3 fixed-top shadow-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfkfjG49kkThQPSlF60aAd9MTmZnPm8G3_pg&s" width="50" height="50" class="rounded-pill me-2" alt="Logo" />
-                <span class="fs-5 fw-bold">Adrian</span>
-            </a>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark p-3 fixed-top shadow-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfkfjG49kkThQPSlF60aAd9MTmZnPm8G3_pg&s" width="50" height="50" class="rounded-pill me-2" alt="Logo" />
+                    <span class="fs-5 fw-bold">Adrian</span>
+                </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link text-primary" href="index.html">
-                            <i class="fas fa-home me-2"></i>Home
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-primary" href="contact.html">
-                            <i class="fas fa-envelope me-2"></i>Contact
-                        </a>
-                    </li>
-                  
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-primary" href="aboutme.html">
-                            <i class="fas fa-info-circle me-2"></i>About
-                        </a>
-                    </li>
-                </ul>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="index.html">
+                                <i class="fas fa-home me-2"></i>Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="contact.html">
+                                <i class="fas fa-envelope me-2"></i>Contact
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="aboutme.html">
+                                <i class="fas fa-info-circle me-2"></i>About
+                            </a>
+                        </li>
+                    </ul>
 
-                <div class="d-flex align-items-center">
-                    <!-- Facebook Link -->
-                    <a href="https://www.facebook.com/profile.php?id=100058260383611" class="text-white mx-2" target="_blank">
-                        <i class="fab fa-facebook fa-lg"></i>
-                    </a>
-                    <!-- Twitter Link -->
-                    <a href="https://x.com/Adriyaney" class="text-white mx-2" target="_blank">
-                        <i class="fab fa-twitter fa-lg"></i>
-                    </a>
-                    <!-- Instagram Link -->
-                    <a href="https://www.instagram.com/adriiiyannn/?igsh=ZGUzMzM3NWJiOQ%3D%3D" class="text-white mx-2" target="_blank">
-                        <i class="fab fa-instagram fa-lg"></i>
-                    </a>
+                    <div class="d-flex align-items-center">
+                        <a href="https://www.facebook.com/profile.php?id=100058260383611" class="text-white mx-2" target="_blank">
+                            <i class="fab fa-facebook fa-lg"></i>
+                        </a>
+                        <a href="https://x.com/Adriyaney" class="text-white mx-2" target="_blank">
+                            <i class="fab fa-twitter fa-lg"></i>
+                        </a>
+                        <a href="https://www.instagram.com/adriiiyannn/?igsh=ZGUzMzM3NWJiOQ%3D%3D" class="text-white mx-2" target="_blank">
+                            <i class="fab fa-instagram fa-lg"></i>
+                        </a>
+                    </div>
                 </div>
-                
-                    </a>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Background Section -->
+    <section id="project" class="py-5">
+        <div class="custom-background"></div>
+
+        <div class="home" id="home">
+            <div class="background-image d-flex justify-content-center align-items-center text-white">
+                <h1 class="display-4">Welcome to Adrian's Website</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- E-commerce Section -->
+    <section class="py-5">
+        <h1 class="text-center mb-4 p-2 bg-dark text-white fs-2">E-commerce Dashboard</h1>
+        <div class="container">
+            <div id="notification" class="alert alert-success d-none" role="alert"></div>
+            <div class="row">
+                <div class="col-md-4 mb-3 rounded">
+                    <div class="card card border-dark rounded shadow">
+                        <img src="laptopguba!.jpg" class="card-img-top" alt="Product Image" style="width: 350px; height: 310px;" />
+                        <div class="card-body">
+                            <h5 class="card-title">Laptop</h5>
+                            <p class="card-text text-danger">Price: $1500</p>
+                            <p class="card-text">
+                                A powerful laptop with a high-resolution display, perfect for work and gaming.
+                            </p>
+                            <p class="card-text" id="stock1">In Stock: 5</p>
+                            <button class="btn btn-outline-info" onclick="addToCart(1)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 rounded">
+                    <div class="card border-dark rounded shadow">
+                        <img src="headphone.jpg" class="card-img-top" alt="Product Image" style="width: 350px;" height="310px" />
+                        <div class="card-body">
+                            <h5 class="card-title">Headphones</h5>
+                            <p class="card-text text-danger">Price: $100</p>
+                            <p class="card-text">
+                                High-quality over-ear headphones with noise-canceling feature for an immersive sound experience.
+                            </p>
+                            <p class="card-text" id="stock2">In Stock: 10</p>
+                            <button class="btn btn-outline-info" onclick="addToCart(2)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card border-dark rounded shadow">
+                        <img src="keyboard.jpg" class="card-img-top" alt="Product Image" style="width: 350px;" height="310px" />
+                        <div class="card-body">
+                            <h5 class="card-title">Keyboard</h5>
+                            <p class="card-text text-danger">Price: $50</p>
+                            <p class="card-text">
+                                A sleek mechanical keyboard with customizable keys for ultimate comfort and productivity.
+                            </p>
+                            <p class="card-text" id="stock3">In Stock: 20</p>
+                            <button class="btn btn-outline-info" onclick="addToCart(3)">Add to Cart</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </nav>
-</section>
-    <!-- Background Section -->
-    <section id="project" class="py-5">
-    <div class="custom-background"></div>
 
-    <div class="home" id="home">
-        <div class="background-image d-flex justify-content-center align-items-center text-white">
-            <h1 class="display-4">Welcome to Adrian's Website</h1>
-        </div>
-    </div>
-    
-</style>
-</head>
-<body>
-<div class="container">
-    <h1 class="text-center my-4">E-commerce Dashboard</h1>
-    <div class="row" id="product-container"></div>
-</div>
+        <footer>
+            <p>Follow us on:</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="mailto:your-email@example.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </footer>
+    </section>
 
-      
-  </section>
-      <!-- Bootstrap JS and dependencies -->
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  
-      <!-- Include the app.js file -->
-      <script src="project.js"></script>
-</body>
-</html>
+    <script>
+        const products = [
+            { id: 1, name: "Laptop", price: 1500, stock: 5 },
+            { id: 2, name: "Headphones", price: 100, stock: 10 },
+            { id: 3, name: "Keyboard", price: 50, stock: 20 },
+        ];
+
+        function addToCart(productId) {
+            const product = products.find((p) => p.id === productId);
+            if (product && product.stock > 0) {
+                product.stock--;
+                displayNotification(`${product.name} added to cart successfully.`);
+                document.getElementById(`stock${productId}`).textContent = `In Stock: ${product.stock}`;
+            } else {
+                alert(`Sorry, ${product ? product.name : " "} is out of stock.`);
+            }
+        }
+
+        function displayNotification(message) {
+            const notification = document.getElementById("notification");
+            notification.textContent
