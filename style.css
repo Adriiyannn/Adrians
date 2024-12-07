@@ -6,23 +6,25 @@
     box-sizing: border-box;
 }
 
-
-  
-.custom-background {
-    background-image: url('https://i.pinimg.com/736x/e5/c8/03/e5c803a1f390a8bfb5f45abd8a055ba5.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    width: 100%;
-}
-
 .custom-backgrounds {
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPoXENx-2FUQJvq601eQvJUAxILn1YXxPWdg&s');
+    background-image: url('cont1.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
     width: 100%;
 }
+.background-image {
+    background-image: url('gif.gif'); 
+    background-size: cover; /* Ensure the background image covers the entire area */
+    background-repeat: no-repeat; /* Prevent background repetition */
+    background-position: center; /* Position the background in the center */
+    height: 100vh; /* Set the height of the background image to full viewport height */
+    display: flex; /* Use flexbox to align content */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    text-align: center; /* Center the text inside the div */
+}
+
 
 
 
@@ -41,7 +43,7 @@
     border-radius: 20px;
     border: 2px solid rgba(134, 131, 131, 0.18);
     border-bottom: 2px solid #162938;
-    box-shadow: 0 8 32px 0 rgba(0, 0, 0, 0.37);
+    box-shadow: 0 8 32px 0 rgba(202, 159, 159, 0.37);
     text-align: center;
     justify-content: center;
 }
@@ -61,7 +63,7 @@ input  {
 textarea  {
     font-style: italic;
     border-radius: 10px;
-    border: 2px solid rgba(102, 53, 53, 0.096);
+    border: 2px solid rgba(204, 0, 0, 0.096);
     border-bottom: 2px solid #516a7e;
     padding: 5px;
    
@@ -71,29 +73,23 @@ textarea  {
 
 .container{
     display: inline-block;
-    padding: 5px 5px;
-    margin-left:30%;
+    padding: 1px 1px;
+    margin-left:10%;
     font-size: 24px;
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    color: #111010;
-    background-color: #efecec;
-    border: 2px solid #000;
+    color: #af0000;
+    background-color: #0825c9;
+    border: 2px solid #080202;
     border-radius: 10px;
-    box-shadow: 5px 5px 0px #000;
+    box-shadow: 5px 5px 0px #5a4c4c;
     transition: all 0.3s ease;
 }
 
-.container:hover{
-    background-color: #fff;
-    color: #ff5252;
-    border: 2px solid #ff5252;
-    box-shadow: 5px 5px 0px #ff5252;
-}
 
 .container:active{
-    background-color: rgb(252, 240, 242);
+    background-color: rgb(145, 60, 74);
     box-shadow: none;
     transform: translateY(4px);
 }
@@ -128,87 +124,115 @@ textarea  {
     100% { transform: rotate(360deg); }
 }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
         
-        body {
-            background-color: #111;
-            font-family: 'Poppins', sans-serif;
-            color: #ffffff;
-            margin-top: 80px;
-        }
+        
 
-        #about {
-            background: linear-gradient(135deg, #2c3e50, #34495e);
-            padding: 80px 0;
-            border-radius: 16px;
-        }
+footer p {
+    margin: 0; /* Remove extra margin */
+    font-size: 18px; /* Adjust font size */
+}
 
-        #about img {
-            max-height: 400px;
-            object-fit: cover;
-            transition: transform 0.3s ease-in-out, box-shadow 0.3s;
-        }
+footer .social-links {
+    margin-top: 10px; /* Space between text and icons */
+}
 
-        #about img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
-        }
+footer .social-links a {
+    color: white; /* Icon color */
+    margin: 0 10px; /* Spacing between icons */
+    font-size: 24px; /* Adjust icon size */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
 
-        #about h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            position: relative;
-        }
+footer .social-links a:hover {
+    color: #007bff; /* Change to blue on hover */
+}
+        
+/* Add a background to the body */
+body {
+    background: url('pic1.gif') no-repeat center center fixed; /* Replace with your image URL */
+    background-size: cover; /* Ensures the background image covers the entire body */
+    background-color: #f0f0f0; /* Fallback background color */
+    font-family: 'Arial', sans-serif; /* Add a font to the body for better typography */
+    margin: 0; /* Removes default margin from the body */
+    padding: 0; /* Removes default padding */
+}
 
-        #about h2::after {
-            content: '';
-            display: block;
-            width: 60px;
-            height: 4px;
-            background: #0d6efd;
-            margin-top: 8px;
-            border-radius: 2px;
-        }
+/* About section styling */
+#about {
+    background: linear-gradient(135deg, #2c3e50, #34495e); /* Background gradient */
+    padding: 150px 20px;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px; /* Limit width of the section */
+    margin: 0 auto; /* Center the section horizontally */
+    border-radius: 16px; /* Rounded corners for the section */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Shadow around the section */
+}
 
-        #about p {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            margin-bottom: 20px;
-            color: #d1d1d1;
-        }
+/* Circular logo container */
+.about-logo-container {
+    width: 150px; /* Size of the circular container */
+    height: 150px; /* Same as width to keep it circular */
+    border-radius: 50%; /* Makes the container circular */
+    overflow: hidden; /* Ensures the image stays within the circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px; /* Centers it and adds space below */
+    border: 4px solid #fff; /* Optional border around the logo */
+    box-shadow: 0 4px 12px rgba(153, 29, 29, 0.3); /* Optional shadow for better visibility */
+}
 
-        .btn {
-            border-radius: 30px;
-            font-size: 1rem;
-            padding: 10px 20px;
-            transition: all 0.3s ease-in-out;
-        }
+/* Logo image styling */
+.about-logo {
+    width: 100%; /* Ensures the image covers the entire circle */
+    height: 100%;
+    object-fit: cover; /* Ensures the logo fits well within the circle without distortion */
+    border-radius: 50%; /* Ensures the image itself is also circular */
+}
 
-        .btn-primary {
-            background-color: #0d6efd;
-            border: none;
-            box-shadow: 0 4px 12px rgba(13, 110, 253, 0.3);
-        }
+/* Heading styling */
+h2 {
+    font-size: 2rem;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
 
-        .btn-primary:hover {
-            background-color: #0056b3;
-            box-shadow: 0 6px 20px rgba(13, 110, 253, 0.6);
-            transform: scale(1.05);
-        }
+/* Paragraph styling */
+p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #f8e2e2;
+    margin-top: 20px;
+    text-align: justify; /* Makes the paragraph more readable */
+    max-width: 700px; /* Optional to keep the text width in check */
+}
 
-        .btn-outline-light {
-            color: #ffffff;
-            border-color: #ffffff;
-            box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
-        }
+/* Optional media query for responsiveness */
+@media (max-width: 768px) {
+    #about {
+        padding: 40px 15px;
+    }
 
-        .btn-outline-light:hover {
-            background-color: #ffffff;
-        }
+    .about-logo-container {
+        width: 120px; /* Adjust logo size for smaller screens */
+        height: 120px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+

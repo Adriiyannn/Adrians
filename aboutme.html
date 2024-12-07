@@ -31,116 +31,7 @@
     </nav>
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
-        
-        body {
-            background-color: #111;
-            font-family: 'Poppins', sans-serif;
-            color: #ffffff;
-            margin-top: 80px;
-        }
-
-        #about {
-            background: linear-gradient(135deg, #2c3e50, #34495e);
-            padding: 80px 0;
-            border-radius: 16px;
-        }
-
-        #about img {
-            max-height: 400px;
-            object-fit: cover;
-            transition: transform 0.3s ease-in-out, box-shadow 0.3s;
-        }
-
-        #about img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
-        }
-
-        #about h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            position: relative;
-        }
-
-        #about h2::after {
-            content: '';
-            display: block;
-            width: 60px;
-            height: 4px;
-            background: #0d6efd;
-            margin-top: 8px;
-            border-radius: 2px;
-        }
-
-        #about p {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            margin-bottom: 20px;
-            color: #d1d1d1;
-        }
-
-        .btn {
-            border-radius: 30px;
-            font-size: 1rem;
-            padding: 10px 20px;
-            transition: all 0.3s ease-in-out;
-        }
-
-        .btn-primary {
-            background-color: #0d6efd;
-            border: none;
-            box-shadow: 0 4px 12px rgba(13, 110, 253, 0.3);
-        }
-
-        .btn-primary:hover {
-            background-color: #0056b3;
-            box-shadow: 0 6px 20px rgba(13, 110, 253, 0.6);
-            transform: scale(1.05);
-        }
-
-        .btn-outline-light {
-            color: #ffffff;
-            border-color: #ffffff;
-            box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
-        }
-
-        .btn-outline-light:hover {
-            background-color: #ffffff;
-            color: #0d6efd;
-            border-color: #0d6efd;
-            transform: scale(1.05);
-        }
-
-        @media (max-width: 768px) {
-            #about {
-                text-align: center;
-            }
-
-            #about img {
-                margin-bottom: 20px;
-            }
-
-            #about h2 {
-                font-size: 2rem;
-            }
-
-            #about p {
-                font-size: 1rem;
-            }
-
-            .d-flex {
-                justify-content: center;
-            }
-        }
-    </style>
+        </style>
     <nav class="navbar navbar-expand-sm bg-dark p-3 navbar-dark fixed-top">
         <a class="navbar-brand" href="index.html">
           <img
@@ -160,34 +51,19 @@
           </li>
         </ul>
       </nav>
-  
 
-    <!-- About Me Section -->
-    <div class="container my-5 pt-5" id="about">
-        <div class="row align-items-center">
-            <div class="col-md-6">
-                <img src="https://scontent.fmnl8-3.fna.fbcdn.net/v/t39.30808-6/428622736_802701861681819_7707436613008914511_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeFx8FM6HX8r8r_7gypuehd3XkgfS0y-ZMpeSB9LTL5kygwVIsde2ZsI1zdGyJeEcaNONPyqZhNdyvHBzwfuW8dQ&_nc_ohc=3sUVf1jb4O4Q7kNvgFl9_lg&_nc_zt=23&_nc_ht=scontent.fmnl8-3.fna&_nc_gid=AIDrISodVsEKb4c4B5PTsAE&oh=00_AYDtAeLt1QsKmHV89GnGqQi3GMIA0btzaGBVMBey2C2QvA&oe=6730F901" alt="About Us">
-            </div>
-            <div class="col-md-6 text-white">
-                <h2 class="display-5 fw-bold">About Adrian's Website</h2>
-                <p class="lead mt-4">
-                    Hello! My name is Adrian. I'm a web developer with a passion for creating beautiful and functional websites.
-                    I love coding and exploring new technologies. In my free time,
-                    I enjoy hiking, reading, and spending time with my friends and family.
-                </p>
-                <div class="d-flex mt-4">
-                    <a href="#" class="btn btn-primary me-2">
-                        <i class="fas fa-phone me-2"></i>Contact Us
-                        
-                    </a>
-                    <a href="#" class="btn btn-outline-light">
-                        <i class="fas fa-info-circle me-2"></i>Learn More
-                    </a>
-                </div>
-            </div>
+
+
+      <section id="about">
+        <div class="about-logo-container">
+            <img src="about.jpg" alt="Logo" class="about-logo">
         </div>
-    </div>
-
+        <h2>About Me</h2>
+        <p>Hello! I’m Adrian Caballero, a web developer based in the Iligan City  Area. 
+             I specialize in crafting visually appealing and functional websites using technologies like HTML, CSS, JavaScript, and frameworks such as React. With a strong foundation in cloud services and programming languages like Python ,
+             I have a passion for creating seamless user experiences and innovative digital solutions.</p>
+                
+<section> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
 </body>
 </html>
